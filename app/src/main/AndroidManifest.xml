@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.android.lucid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+
+        <activity
+            android:name=".ui.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ui.AuthView"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.MainView"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".ui.BeginFeelingView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.PlayerView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ResultFeelingView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.ClosingView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.SignUpView"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.LogInView"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="abfc2f51ea27b18f4da5c3109a6af21c613be315" />
+
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>

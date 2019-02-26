@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fak_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="onBackClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_close" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|top"
+        android:orientation="vertical"
+        android:weightSum="5">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            tools:text="How energized do you feel now?" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/seekbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_caption_min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_vertical"
+                android:src="@drawable/txt_calm" />
+
+            <TextView
+                android:id="@+id/tv_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text=""
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                tools:text="50" />
+
+
+            <ImageView
+                android:id="@+id/iv_caption_max"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/txt_not_calm" />
+        </FrameLayout>
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onNextClick"
+            android:src="@drawable/btn_next" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2" />
+
+    </LinearLayout>
+
+</LinearLayout>

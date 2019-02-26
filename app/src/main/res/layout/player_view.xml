@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_calm_choose_your_exp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fak_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="16dp"
+            android:adjustViewBounds="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="onBackClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_close" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        android:layout_weight="1"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+
+        <ImageButton
+            android:id="@+id/btn_toggle_player"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_margin="16dp"
+            android:adjustViewBounds="true"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:onClick="onTogglePlayerClick"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_play" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="16dp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btn_toggle_type_1"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_calm_min" />
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btn_toggle_type_2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:background="?android:selectableItemBackground"
+                android:scaleType="fitCenter"
+                android:src="@drawable/btn_calm_max" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
